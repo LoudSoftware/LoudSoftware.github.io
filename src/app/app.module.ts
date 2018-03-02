@@ -7,10 +7,9 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DownloadComponent } from './components/download/download.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { MapComponent } from './components/map/map.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 
 @NgModule({
@@ -19,10 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     NavigationComponent,
     HeaderComponent,
-    DownloadComponent,
     ContactComponent,
-    MapComponent,
     FooterComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,

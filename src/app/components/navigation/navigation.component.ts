@@ -9,7 +9,7 @@ export class NavigationComponent implements OnInit {
 
   public navigationArr:Array<string> = [
     'About',
-    'Download',
+    'Resume',
     'Contact',
   ];
 
