@@ -1,6 +1,6 @@
 import { Component, Renderer2 } from '@angular/core';
 
-const grayscaleScript:string = "/assets/js/grayscale.js";
+const grayscaleScript:string = "./assets/js/grayscale.js";
 
 @Component({
   selector: 'app-root',
