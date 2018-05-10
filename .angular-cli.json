@@ -24,6 +24,7 @@
         "./assets/css/_mixins.scss",
         "./assets/css/grayscale.scss",
         "./assets/font-awesome/css/font-awesome.min.css",
+        "../node_modules/emoji-awesome/dist/css/twitter.min.css",
         "styles.scss"
       ],
       "scripts": [
