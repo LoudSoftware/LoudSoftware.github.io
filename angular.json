@@ -26,6 +26,7 @@
               "src/assets/css/_mixins.scss",
               "src/assets/css/grayscale.scss",
               "src/assets/font-awesome/css/font-awesome.min.css",
+              "node_modules/emoji-awesome/dist/css/twitter.min.css",
               "src/styles.scss"
             ],
             "scripts": [
@@ -91,6 +92,7 @@
               "src/assets/css/_mixins.scss",
               "src/assets/css/grayscale.scss",
               "src/assets/font-awesome/css/font-awesome.min.css",
+              "node_modules/emoji-awesome/dist/css/twitter.min.css",
               "src/styles.scss"
             ],
             "assets": [

@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, Renderer2, AfterViewInit } from '@angular/core';
 const grayscaleScript = './assets/js/grayscale.js';
 
 @Component({
@@ -6,14 +6,16 @@ const grayscaleScript = './assets/js/grayscale.js';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   private loadGrayscale: Promise<any>;
+  private loaded: boolean;
 
   constructor(private renderer: Renderer2) {
 
   }
 
   ngAfterViewInit(): void {
+    
     // Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
     // Add 'implements AfterViewInit' to the class.
     this.renderer.setAttribute(document.querySelector('body'), 'id', 'page-top');
