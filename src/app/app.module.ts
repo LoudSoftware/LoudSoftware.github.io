@@ -9,6 +9,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TopSongsComponent } from './components/top-songs/top-songs.component';
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { ResumeComponent } from './components/resume/resume.component';
     ContactComponent,
     FooterComponent,
     ResumeComponent,
+    TopSongsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  public navigationArr:Array<string> = [
+  public navigationArr: Array<string> = [
     'About',
+    'Listening',
     'Resume',
     'Contact',
   ];
@@ -18,7 +19,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
   }
 
-  makeLowercase(value:string):string {
+  makeLowercase(value: string): string {
     return value.toLocaleLowerCase();
   }
 

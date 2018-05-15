@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    
+
     // Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
     // Add 'implements AfterViewInit' to the class.
     this.renderer.setAttribute(document.querySelector('body'), 'id', 'page-top');
