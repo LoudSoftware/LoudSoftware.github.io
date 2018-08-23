@@ -2,7 +2,7 @@ emoji-awesome@0.0.1
 MIT
 MIT
 
-core-js@2.5.6
+core-js@2.5.7
 MIT
 Copyright (c) 2014-2018 Denis Pushkarev
 
