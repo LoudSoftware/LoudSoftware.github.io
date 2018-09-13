@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WeeklyTrackChartModel } from '../../models/weekly-track-chart-model';
+import { WeeklyTrackChart } from '../../models/weekly-track-chart-model';
 import { LastFMService } from '../../services/last-fmservice.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { LastFMService } from '../../services/last-fmservice.service';
 })
 export class TopSongsComponent implements OnInit {
 
-  public tracks: WeeklyTrackChartModel;
+  public tracks: WeeklyTrackChart;
 
   constructor(private lfm: LastFMService) { }
 

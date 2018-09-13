@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from "@angular/common/http";
 import { Observable, Subscription, Subscribable, SubscribableOrPromise } from "rxjs";
 import { map, mapTo } from "rxjs/operators";
-import { WeeklyTrackChartModel } from '../models/weekly-track-chart-model';
+import { WeeklyTrackChart } from '../models/weekly-track-chart-model';
 
 @Injectable({
   providedIn: 'root'
@@ -38,8 +38,8 @@ export class LastFMService {
   /**
    * getWeeklyChart
    */
-  public getWeeklyChart(): Observable<WeeklyTrackChartModel> {
-    return this.http.get<WeeklyTrackChartModel>(this.apiUrl, { params: this.params })
+  public getWeeklyChart(): Observable<WeeklyTrackChart> {
+    return this.http.get<WeeklyTrackChart>(this.apiUrl, { params: this.params })
       .pipe(
         map(res => res['weeklytrackchart']),
       );
