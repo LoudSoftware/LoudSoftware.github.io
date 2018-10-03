@@ -1,3 +1,5 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -24,13 +26,15 @@ import { TopSongsComponent } from './components/top-songs/top-songs.component';
     ResumeComponent,
     TopSongsComponent,
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+    
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
