@@ -26,7 +26,7 @@ import { TopSongsComponent } from './components/top-songs/top-songs.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    NgbModule,
     AngularFontAwesomeModule,
     HttpClientModule,
   ],
