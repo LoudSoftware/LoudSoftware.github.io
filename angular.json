@@ -121,9 +121,9 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://loud.software",
+            "baseHref": "https://loud.software/",
             "branch": "master",
-            "cnmae": "loud.software"
+            "cname": "loud.software"
           }
         }
       }

@@ -9,8 +9,8 @@ export class NavigationComponent implements OnInit {
 
   public navigationArr: Array<string> = [
     'About',
-    'Listening',
     'Resume',
+    'Listening',
     'Contact',
   ];
 
