@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { AngularFontAwesomeModule} from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -28,7 +28,7 @@ import { TopSongsComponent } from './components/top-songs/top-songs.component';
   imports: [
     BrowserModule,
     NgbModule,
-    FontAwesomeModule,
+    // FontAwesomeModule,
     // AngularFontAwesomeModule,
     HttpClientModule,
   ],
