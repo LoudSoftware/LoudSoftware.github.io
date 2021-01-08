@@ -89,7 +89,7 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "src/assets/bootstrap/js/bootstrap.bundle.min.js",
-              "src/assets/js/jquery-easing/jquery.easing.min.js",
+              "src/assets/js/jquery-easing/jquery.easing.min.js"
             ],
             "styles": [
               "src/assets/bootstrap/css/bootstrap.min.css",
@@ -116,6 +116,14 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://loud.software",
+            "branch": "master",
+            "cnmae": "loud.software"
           }
         }
       }
