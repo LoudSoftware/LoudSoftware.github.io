@@ -33,7 +33,7 @@ export class AppComponent implements AfterViewInit {
     node.src = grayscaleScript;
     node.type = 'text/javascript';
     node.async = true;
-    node.charset = 'utf-8';
+    // node.charset = 'utf-8';
     document.getElementsByTagName('head')[0].appendChild(node);
   }
 }
