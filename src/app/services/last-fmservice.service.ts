@@ -20,7 +20,7 @@ export class LastFMService {
     const date = new Date();
     const month = date.getMonth();
     const year = date.getFullYear();
-    const from = (new Date(year, month, 1, 12).getTime() / 1000).toString();
+    const from = (new Date(year, month, 1, 0).getTime() / 1000).toString();
 
 
     this.params = new HttpParams({
