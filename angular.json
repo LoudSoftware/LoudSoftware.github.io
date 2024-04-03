@@ -35,7 +35,12 @@
               "src/assets/bootstrap/js/bootstrap.bundle.min.js",
               "src/assets/js/jquery-easing/jquery.easing.min.js",
               "src/assets/js/grayscale.js"
-            ]
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./node_modules"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -131,7 +136,6 @@
       }
     }
   },
-  "defaultProject": "loud-software",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
@@ -140,5 +144,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
