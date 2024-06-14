@@ -112,6 +112,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "remote": "origin",
             "baseHref": "https://loud.software/",
             "branch": "master",
             "cname": "loud.software"

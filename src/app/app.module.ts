@@ -10,29 +10,20 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TopSongsComponent } from './components/top-songs/top-songs.component';
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    NavigationComponent,
-    HeaderComponent,
-    ContactComponent,
-    FooterComponent,
-    ResumeComponent,
-    TopSongsComponent,
-  ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    // FontAwesomeModule,
-    // AngularFontAwesomeModule,
-    HttpClientModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        AboutComponent,
+        NavigationComponent,
+        HeaderComponent,
+        ContactComponent,
+        FooterComponent,
+        ResumeComponent,
+        TopSongsComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        NgbModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
